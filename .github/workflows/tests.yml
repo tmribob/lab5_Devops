@@ -1,6 +1,6 @@
 name: Test Python App
 
-on: [push]
+on: [ push ]
 
 jobs:
   ci:
@@ -19,8 +19,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest httpx
+          
           # Установите другие зависимости вашего проекта, если они есть
-          # pip install -r requirements.txt
+           pip install -r requirements.txt
 
       - name: Run tests
         run: |
